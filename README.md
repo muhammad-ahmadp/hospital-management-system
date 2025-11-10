@@ -58,26 +58,51 @@ java MainHospital
 ```
 --- Doctors Information ---
 Doctor ID    : D101
-Name        : Dr. Ali
-Age         : 40
-Gender      : Male
+Name         : Dr. Ali
+Age          : 40
+Gender       : Male
 Specialization: Cardiology
 Salary       : 150000.00
 --------------------------------
 
+Doctor ID    : D102
+Name         : Dr. Sara Khan
+Age          : 24
+Gender       : Female
+Specialization: Neurology
+Salary       : 140000.00
+--------------------------------
+
 --- All Patients Information ---
 Patient ID   : P201
-Name        : Ahmad Khan
-Age         : 40
-Gender      : Male
+Name         : Ahmad Khan
+Age          : 40
+Gender       : Male
 Disease      : Heart Attack
 Room Number  : 10
+--------------------------------
+
+Patient ID   : P202
+Name         : Sara Ali
+Age          : 20
+Gender       : Female
+Disease      : Migraine
+Room Number  : 14
+--------------------------------
+
+Patient ID   : P203
+Name         : Bilal Shah
+Age          : 50
+Gender       : Male
+Disease      : Diabetes
+Room Number  : 16
 --------------------------------
 
 ===== Hospital Summary =====
 Total Doctors : 2
 Total Patients: 3
 ============================
+
 ```
 
 ## 🎯 Key Concepts Demonstrated
