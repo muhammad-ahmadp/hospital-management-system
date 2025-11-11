@@ -1,6 +1,7 @@
 # 🏥 Hospital Management System
 
 A simple console-based Hospital Management System built with Java, demonstrating core OOP principles including inheritance, encapsulation, and polymorphism.
+Author [Muhammad Ahmad]
 
 ## 📋 Features
 
