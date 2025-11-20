@@ -20,7 +20,7 @@ public class Person {
      */
     public Person(String name, int age, String gender) {
         if (name == null || name.trim().isEmpty() || age < 0 || gender == null || gender.trim().isEmpty()) {
-            throw new IllegalArgumentException("❌ Invalid input!");
+            throw new IllegalArgumentException("Invalid input!");
         }
         this.name = name;
         this.age = age;
@@ -30,21 +30,21 @@ public class Person {
     // Standard setters with validation
     public void setName(String name) {
         if (name == null || name.trim().isEmpty()) {
-            throw new IllegalArgumentException("❌ Name cannot be null or empty!");
+            throw new IllegalArgumentException("Name cannot be null or empty!");
         }
         this.name = name;
     }
 
     public void setAge(int age) {
         if (age < 0) {
-            throw new IllegalArgumentException("❌ Age must be greater than zero!");
+            throw new IllegalArgumentException("Age must be greater than zero!");
         }
         this.age = age;
     }
 
     public void setGender(String gender) {
         if (gender == null || gender.trim().isEmpty()) {
-            throw new IllegalArgumentException("❌ Gender cannot be null or empty!");
+            throw new IllegalArgumentException("Gender cannot be null or empty!");
         }
         this.gender = gender;
     }
@@ -63,4 +63,5 @@ public class Person {
                 name, age, gender
         );
     }
+
 }
