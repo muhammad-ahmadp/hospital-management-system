@@ -17,7 +17,7 @@ public class Patient extends Person {
     public Patient(String name, int age, String gender, String patientId, String disease, int roomNumber) {
         super(name, age, gender);
         if (patientId == null || patientId.trim().isEmpty() || disease == null || disease.trim().isEmpty() || roomNumber < 0) {
-            throw new IllegalArgumentException("❌ Invalid input!");
+            throw new IllegalArgumentException("Invalid input!");
         }
         this.patientId = patientId;
         this.disease = disease;
@@ -27,21 +27,21 @@ public class Patient extends Person {
     // Standard setters with validation
     public void setPatientId(String patientId) {
         if (patientId == null || patientId.trim().isEmpty()) {
-            throw new IllegalArgumentException("❌ Patient ID cannot be null or empty!");
+            throw new IllegalArgumentException("Patient ID cannot be null or empty!");
         }
         this.patientId = patientId;
     }
 
     public void setDisease(String disease) {
         if (disease == null || disease.trim().isEmpty()) {
-            throw new IllegalArgumentException("❌ Cannot treat without disease!");
+            throw new IllegalArgumentException("Cannot treat without disease!");
         }
         this.disease = disease;
     }
 
     public void setRoomNumber(int roomNumber) {
         if (roomNumber < 0) {
-            throw new IllegalArgumentException("❌ Room number must be greater than zero!");
+            throw new IllegalArgumentException("Room number must be greater than zero!");
         }
         this.roomNumber = roomNumber;
     }
@@ -66,4 +66,5 @@ public class Patient extends Person {
         System.out.println("--------------------------------");
         System.out.println();
     }
+
 }
