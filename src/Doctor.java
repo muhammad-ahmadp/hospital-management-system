@@ -17,7 +17,7 @@ public class Doctor extends Person {
     public Doctor(String name, int age, String gender, String doctorID, String specialization, double salary) {
         super(name, age, gender);
         if (doctorID == null || doctorID.trim().isEmpty() || specialization == null || specialization.trim().isEmpty() || salary < 0) {
-            throw new IllegalArgumentException("❌ Invalid input!");
+            throw new IllegalArgumentException("Invalid input!");
         }
         this.doctorID = doctorID;
         this.specialization = specialization;
@@ -27,21 +27,21 @@ public class Doctor extends Person {
     // Standard setters with validation
     public void setDoctorID(String doctorID) {
         if (doctorID == null || doctorID.trim().isEmpty()) {
-            throw new IllegalArgumentException("❌ ID cannot be null or empty!");
+            throw new IllegalArgumentException("ID cannot be null or empty!");
         }
         this.doctorID = doctorID;
     }
 
     public void setSpecialization(String specialization) {
         if (specialization == null || specialization.trim().isEmpty()) {
-            throw new IllegalArgumentException("❌ Specialization cannot be null or empty!");
+            throw new IllegalArgumentException("Specialization cannot be null or empty!");
         }
         this.specialization = specialization;
     }
 
     public void setSalary(double salary) {
         if (salary < 0) {
-            throw new IllegalArgumentException("❌ Salary must be greater than zero!");
+            throw new IllegalArgumentException("Salary must be greater than zero!");
         }
         this.salary = salary;
     }
@@ -66,4 +66,5 @@ public class Doctor extends Person {
         System.out.println("--------------------------------");
         System.out.println();
     }
+
 }
